@@ -22,5 +22,6 @@ $(document).ready(function() {
       $("#breatheout").delay(5500).fadeIn(1000).delay(500).fadeOut(1000);
       $("#message").delay(5000).fadeIn(500);
       $("#links").delay(8000).fadeIn(500);
+      $("#thoughts").reset();
    });
 });
