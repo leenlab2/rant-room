@@ -12,8 +12,10 @@ function closeNav() {
 
 $(document).ready(function() {
    $("#message").hide();
+   $('#links').hide();
    $("#release").click(function(){
       $("#rant").fadeOut(1000);
-      $("#message").delay(800).fadeIn(1000);
+      $("#message").delay(1000).fadeIn(1000);
+      $("#links").delay(2000).fadeIn(1000);
    });
 });
