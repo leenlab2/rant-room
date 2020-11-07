@@ -17,8 +17,23 @@ body{
     font-family: sans-serif;
 }
 
-a p {display: none;}
-a:hover p {display: block;}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #716da6;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 .link {
     cursor: pointer;
