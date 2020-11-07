@@ -1,0 +1,109 @@
+.title{
+    font-family: monospace;
+    color: white;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+#thoughts {
+    width: 70%;
+    padding: 15px 15px;
+
+    box-sizing: border-box;
+    background-color: rgb(230, 231, 235, 0.4);
+    border-radius: 0px;
+}
+
+#thoughts:focus {
+   background-color: rgb(230, 231, 235);
+   border: 3px solid #555;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 7px 7px;
+    border: none;
+    margin-left: 60%;
+}
+
+input[type=checkbox] {
+    margin-left: 60%;
+    margin-bottom: 15px;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #6b736d;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#rant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    width: 80%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}

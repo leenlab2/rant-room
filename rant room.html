@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rant Room</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\leenl\Documents\csc110\hackHer\rant_room_css.css"/>
+    <script src="C:\Users\leenl\Documents\csc110\hackHer\rant_room_js.js"></script>
+</head>
+<body>
+    <div id="menuSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">My History</a>
+        <a href="#">Quick Navigation</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">&#187;</button>
+        <div id="rant" class="fade-out">
+            <h1 class="title">What's on your mind?...</h1>
+            <form action="">
+                <input type="text" id="thoughts" name="thoughts" value="Let it out..."><br><br>
+                <input type="checkbox" id="board" name="board">
+                <label for="board" style="color:white;"> Post to Board</label><br>
+                <input type="submit" value="Release to the stars">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
