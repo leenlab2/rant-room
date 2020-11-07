@@ -10,7 +10,6 @@ body {
 #thoughts {
     width: 70%;
     padding: 15px 15px;
-
     box-sizing: border-box;
     background-color: rgb(230, 231, 235, 0.4);
     border-radius: 0px;
@@ -21,17 +20,30 @@ body {
    border: 3px solid #555;
 }
 
+#release {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 15px 15px;
+    border: none;
+    margin-left: 30%;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 input[type=submit] {
     cursor: pointer;
     border-radius: 10px;
     padding: 7px 7px;
     border: none;
-    margin-left: 60%;
-}
-
-input[type=checkbox] {
-    margin-left: 60%;
-    margin-bottom: 15px;
+    margin-left: 65%;
+    margin-bottom: 10px;
 }
 
 /* The sidebar menu */
@@ -98,7 +110,7 @@ input[type=checkbox] {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-35%, -50%);
+    transform: translate(-40%, -50%);
     width: 80%;
 }
 

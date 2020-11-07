@@ -9,3 +9,11 @@ function closeNav() {
   document.getElementById("menuSidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+$(document).ready(function() {
+   $("#message").hide();
+   $("#release").click(function(){
+      $("#rant").fadeOut(1000);
+      $("#message").delay(800).fadeIn(1000);
+   });
+});

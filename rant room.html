@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Rant Room</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\leenl\Documents\csc110\hackHer\rant_room_css.css"/>
-    <script src="C:\Users\leenl\Documents\csc110\hackHer\rant_room_js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="C:\Users\leenl\Documents\csc110\hackHer\rant_room_js.js"></script>
 </head>
 <body>
     <div id="menuSidebar" class="sidebar">
@@ -16,14 +17,17 @@
 
     <div id="main">
         <button class="openbtn" onclick="openNav()">&#187;</button>
-        <div id="rant" class="fade-out">
+        <div id="rant">
             <h1 class="title">What's on your mind?...</h1>
             <form action="">
                 <input type="text" id="thoughts" name="thoughts" value="Let it out..."><br><br>
-                <input type="checkbox" id="board" name="board">
-                <label for="board" style="color:white;"> Post to Board</label><br>
-                <input type="submit" value="Release to the stars">
+                <input type="submit" value="Post to board">
             </form>
+            <button type="button" id="release">Release to the stars</button>
+        </div>
+
+        <div id="message">
+            <h1 class="title">Everything is going to be okay</h1>
         </div>
     </div>
 </body>
