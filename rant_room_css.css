@@ -30,7 +30,7 @@ body {
     font-size: 15px;
 }
 
-#message {
+#message, #breathein, #breatheout {
     position: absolute;
     top: 50%;
     left: 50%;
