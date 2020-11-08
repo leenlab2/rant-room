@@ -67,6 +67,24 @@ input[type=submit] {
     display: block;
 }
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #4c4e4f;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* The sidebar menu */
 .sidebar {
   height: 100%;
