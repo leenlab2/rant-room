@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html> lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Mindfulness</title>
     <link rel="stylesheet" type="text/css" href="fun_rooms.css"/>
-    <script type="text/javascript" src="{{ url_for('static', filename='fun_rooms.js') }}"></script>
+    <script type="text/javascript" src="fun_rooms.js"></script>
 </head>
 <body>
 <h1 class="title">Mindfulness Room</h1>
 <div id="menuSidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#">About</a>
-    <a href="{{ url_for('static', filename='portal_room.html') }}">Portal Room</a>
-    <a href="{{ url_for('static', filename='portal_room.html') }}">The Board</a>
+    <a href="portal_room.html">Portal Room</a>
+    <a href="Board.html">The Board</a>
 </div>
+
+<button class="openbtn" onclick="openNav()">&#187;</button>
+
 <div class="link">
     <div class="tile">
         <img src="https://media.self.com/photos/5f92f08910eea3f4bed3188e/1:1/w_1280%2Cc_limit/meditating_mental_health.jpeg"
