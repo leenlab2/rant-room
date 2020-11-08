@@ -11,17 +11,16 @@
     <div id="menuSidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">About</a>
-        <a href="#">My History</a>
-        <a href="#">Quick Navigation</a>
+        <a href="portal_room.html">Portal Room</a>
     </div>
 
     <div id="main">
         <button class="openbtn" onclick="openNav()">&#187;</button>
         <div id="rant">
             <h1 class="title">What's on your mind?...</h1>
-            <form action="">
+            <form action="{{ url_for('foo')}}" method="POST">
                 <input type="text" id="thoughts" name="thoughts" value="Let it out..."><br><br>
-                <input type="submit" value="Post to board">
+                <input type="submit" value="Post to board" id="board">
             </form>
             <button type="button" id="release">Release to the stars</button>
         </div>
@@ -41,6 +40,7 @@
         <div id="links">
             <a class="ml" href="#">See what others are thinking</a>
             <a class="ml" href="portal_room.html">Do something fun</a>
+            <a class="ml" href="https://www.goodnewsnetwork.org/">Browse some good news</a>
         </div>
     </div>
 </body>
