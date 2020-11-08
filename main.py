@@ -19,6 +19,11 @@ def foo():
     insert_user_message(thoughts)
     return render_template('index.html')
 
+@app.route("/test", methods=['GET'])
+def test():
+    cursor.execute("select user_message from messages")
+    result = cursor.fetchall()
+    return render_template("Board.html", data=result)
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
