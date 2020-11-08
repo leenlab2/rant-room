@@ -153,8 +153,22 @@ input[type=submit] {
     width: 80%;
 }
 
+#about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-38%, -50%);
+    width: 60%;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+}
+
+#aboutPage {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
 }

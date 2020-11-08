@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rant Room</title>
+    <link rel="stylesheet" type="text/css" href="rant_room_css.css"/>
+    <script type="text/javascript" src="rant_room_js.js"></script>
+</head>
+<body>
+<div id="menuSidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="About.html">About</a>
+    <a href="{{ url_for('template', filename='index.html')}}">Rant Room</a>
+    <a href="portal_room.html">Portal Room</a>
+    <a href="Board.html">The Board</a>
+</div>
+
+<div id="main">
+    <button class="openbtn" onclick="openNav()">&#187;</button>
+    <div id="about">
+        <h1 class="title">About The Rant Room</h1>
+        <p id="aboutPage">The Rant Room is your one-stop survival kit for whenever you are feeling down! <br><br>
+            During difficult times, it is easy to feel isolated and overwhelmed, but not have anyone to talk to.
+            In the Rant Room, vent out your worries to your heart's content then release them to the stars! <br><br>
+            Feel free to explore the other rooms as well! Visit the Board to remind yourself that you are not alone in
+            your
+            worries, or explore the Portal for mental health support options or simply to find something fun to do!
+        </p>
+    </div>
+</div>
+</body>
+</html>
