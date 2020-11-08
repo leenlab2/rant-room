@@ -2,6 +2,7 @@
 from flask import Flask
 from flask import url_for, render_template, request
 from test_database import insert_user_message
+import os
 
 app = Flask(__name__)
 
@@ -20,4 +21,5 @@ def foo():
 
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True, host='0.0.0.0')
+    port = int(os.environ.get('PORT', 5000))
+    app.run(port=port, debug=True, host='0.0.0.0')
