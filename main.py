@@ -5,7 +5,8 @@ from test_database import insert_user_message
 import os
 
 app = Flask(__name__, static_url_path='')
-
+app.add_url_rule('/template/<path:filename>', endpoint='template',
+                 view_func=app.send_static_file)
 
 @app.route('/template/<path:path>')
 def send_tp(path):
