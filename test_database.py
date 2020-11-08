@@ -1,11 +1,8 @@
-"""
-Hello
-"""
 import psycopg2
-from hackHer.config import config
+from hackher.config import config
 
 
-def insert_user_message(user_message):
+def insert_user_message(user_message: str):
     """ insert a new user into the message table """
     sql = """INSERT INTO messages(user_message)
              VALUES(%s) RETURNING user_id;"""
@@ -31,8 +28,7 @@ def insert_user_message(user_message):
     finally:
         if conn is not None:
             conn.close()
-
-    return user_id
+    return 'Loading'
 
 
 def get_message():
@@ -56,5 +52,4 @@ def get_message():
     finally:
         if conn is not None:
             conn.close()
-
 
