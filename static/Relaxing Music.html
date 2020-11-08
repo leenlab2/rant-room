@@ -4,24 +4,69 @@
     <meta charset="UTF-8">
     <title>Relaxing Music Room</title>
     <link rel="stylesheet" type="text/css" href="fun_rooms.css"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='fun_rooms.js') }}"></script>
 </head>
 <body>
 <h1 class="title">Relaxing Music</h1>
+<div id="menuSidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="{{ url_for('static', filename='portal_room.html') }}">Portal Room</a>
+    <a href="{{ url_for('static', filename='portal_room.html') }}">The Board</a>
+</div>
+
 <div class="link">
-    <div class="tile"
-         style="background-image: url('https://static.billboard.com/files/media/dance-chill-2017-billboard-1548-compressed.jpg');">
-        <a href="https://www.billboard.com/photos/7989244/relaxing-music-playlist-calming-chill-songs-edm-2017/>Calming Songs Playlist"</a></div>
-    <div class="tile" <a href="https://open.spotify.com/playlist/6EIVswdPfoE9Wac7tB6FNg">Relaxing Songs</a></div>
-    <div class="tile"
-         style="background-image: url('https://athlonsports.com/sites/athlonsports.com/files/styles/article_top_img/public/Pump-Up-Songs-Sports_1.jpg?itok=ISqGaZag');">
-        <a href="https://athlonsports.com/best-pump-up-songs-sports">Pump up Songs</a></div>
-    <div class="tile"><a href="https://bleacherreport.com/articles/672617-top-100-pregame-pump-up-songs-of-all-time">Pump-Up Songs</a></div>
-    <div class="tile" style="background-image: url('https://i0.wp.com/indiemono.com/wp-content/uploads/2017/06/thb-copia.jpg?fit=300%2C300&ssl=1');">
-        <a href="https://open.spotify.com/playlist/1TNg7JCxifAjwrnQARimex">Oldies</a></div>
-    <div class="tile" style="background-image: url('https://www.cleveland.com/resizer/R0X7nWYc1dLe_benyPvOr-tYMzU=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/expo.advance.net/img/a6c6f5e2b1/width2048/0b0_21stcenturysongs.jpeg');">
-        <a href="https://www.cleveland.com/life-and-culture/g66l-2019/08/44194376c94983/150-greatest-songs-of-the-21st-century-so-far.html">21st Songs</a></div>
-    <div class="tile" style="background-image: url('https://i.ytimg.com/vi/VnVypJZsKGY/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDPiZZKjGMyF28w3FBr4uKE9ADpLw');">
-        <a href="https://www.youtube.com/playlist?list=PLemiIdqX-t0AXc9yXxQrdlFTGnVvj-cxz">Meditation Music</a></div>
+    <div class="tile">
+        <img src="https://static.billboard.com/files/media/dance-chill-2017-billboard-1548-compressed.jpg"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://www.billboard.com/photos/7989244/relaxing-music-playlist-calming-chill-songs-edm-2017/">Calming Songs Playlist</a>
+        </div>
+    </div>
+    <div class="tile">
+        <img src="https://yt3.ggpht.com/a/AATXAJwCqGmdKXA0-qp_4TP0Sp6lYP0easjnRpn-EkCaDA=s176-c-k-c0x00ffffff-no-rj"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://open.spotify.com/playlist/6EIVswdPfoE9Wac7tB6FNg">Relaxing Songs</a>
+        </div>
+    </div>
+    <div class="tile">
+        <img src="https://athlonsports.com/sites/athlonsports.com/files/styles/article_top_img/public/Pump-Up-Songs-Sports_1.jpg?itok=ISqGaZag"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://athlonsports.com/best-pump-up-songs-sports">Pump up Songs</a>
+        </div>
+    </div>
+    <div class="tile">
+        <img src="https://yt3.ggpht.com/a/AATXAJwCqGmdKXA0-qp_4TP0Sp6lYP0easjnRpn-EkCaDA=s176-c-k-c0x00ffffff-no-rj"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://bleacherreport.com/articles/672617-top-100-pregame-pump-up-songs-of-all-time">Pump-Up
+                Songs</a>
+        </div>
+    </div>
+    <div class="tile">
+        <img src="https://i0.wp.com/indiemono.com/wp-content/uploads/2017/06/thb-copia.jpg?fit=300%2C300&ssl=1"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://open.spotify.com/playlist/1TNg7JCxifAjwrnQARimex">Oldies</a>
+        </div>
+    </div>
+    <div class="tile">
+        <img src="https://www.cleveland.com/resizer/R0X7nWYc1dLe_benyPvOr-tYMzU=/1280x0/smart/advancelocal-adapter-image-uploads.s3.amazonaws.com/expo.advance.net/img/a6c6f5e2b1/width2048/0b0_21stcenturysongs.jpeg"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://www.cleveland.com/life-and-culture/g66l-2019/08/44194376c94983/150-greatest-songs-of-the-21st-century-so-far.html">21st
+                Songs</a>
+        </div>
+    </div>
+    <div class="tile">
+        <img src="https://i.ytimg.com/vi/VnVypJZsKGY/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDPiZZKjGMyF28w3FBr4uKE9ADpLw"
+             style="width: 100%;">
+        <div class="container">
+            <a href="https://www.youtube.com/playlist?list=PLemiIdqX-t0AXc9yXxQrdlFTGnVvj-cxz">Meditation Music</a>
+        </div>
+    </div>
 </div>
 </body>
 </html>

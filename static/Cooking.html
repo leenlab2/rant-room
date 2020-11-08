@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Cooking Room</title>
     <link rel="stylesheet" type="text/css" href="fun_rooms.css"/>
+    <script type="text/javascript" src="{{ url_for('static', filename='fun_rooms.js') }}"></script>
 </head>
 <body>
 <h1 class="title">Cooking</h1>
+<div id="menuSidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="{{ url_for('static', filename='portal_room.html') }}">Portal Room</a>
+    <a href="{{ url_for('static', filename='portal_room.html') }}">The Board</a>
+</div>
 <div class="link">
     <div class="tile">
         <img src="https://yt3.ggpht.com/a/AATXAJyLVOvAqN6PjvHcf9oa49H1fl0YHHtMbRbYsZdE=s176-c-k-c0x00ffffff-no-rj"
