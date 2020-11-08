@@ -1,5 +1,5 @@
 import psycopg2
-from hackher.config import config
+from config import config
 
 
 def insert_user_message(user_message: str):
