@@ -17,11 +17,11 @@ $(document).ready(function() {
    $('#breatheout').hide();
    $("#release").click(function(){
       $("#rant").fadeOut(1000);
-      $("#message").delay(1000).fadeIn(1000).fadeOut(1000);
-      $("#breathein").delay(3000).fadeIn(1000).delay(500).fadeOut(1000);
-      $("#breatheout").delay(5500).fadeIn(1000).delay(500).fadeOut(1000);
-      $("#message").delay(5000).fadeIn(500);
-      $("#links").delay(8000).fadeIn(500);
+      $("#message").delay(1000).fadeIn(1000).delay(500).fadeOut(1000);
+      $("#breathein").delay(3500).fadeIn(1000).delay(1000).fadeOut(1000);
+      $("#breatheout").delay(6500).fadeIn(1000).delay(1000).fadeOut(1000);
+      $("#message").delay(6000).fadeIn(500);
+      $("#links").delay(9000).fadeIn(500);
       $("#thoughts").reset();
    });
 });
