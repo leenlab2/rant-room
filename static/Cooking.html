@@ -9,10 +9,11 @@
 <body>
 <h1 class="title">Cooking</h1>
 <div id="menuSidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="portal_room.html">Portal Room</a>
-    <a href="Board.html">The Board</a>
+    <a class="sidebarLink" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="sidebarLink" href="About.html">About</a>
+    <a class="sidebarLink" href="{{ url_for('template', filename='index.html')}}">Rant Room</a>
+    <a class="sidebarLink" href="portal_room.html">Portal Room</a>
+    <button class="sidebarLink" type="button" id="feed" onclick="window.location.href='{{ url_for( 'test' ) }}';"></button>
 </div>
 
 <button class="openbtn" onclick="openNav()">&#187;</button>
