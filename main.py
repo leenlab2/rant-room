@@ -11,10 +11,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/board')
-def board():
-    return render_template('Board.html')
-
 @app.route('/foo', methods=['POST'])
 def foo():
     thoughts = request.form['thoughts']
